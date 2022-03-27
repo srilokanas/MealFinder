@@ -1,0 +1,54 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f0f0f0;
+  position: fixed;
+  height: 80%;
+  overflow: auto;
+}
+.sidebar h2 {
+  text-align: center;
+  color: olive;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 100%;
+}
+
+.apply {
+  background-color: #f0f0f0;
+  color: #0f0f0f;
+  border: 2px solid orangered;
+  width: 100px;
+  padding: 8px;
+  margin: 16px;
+}
+
+.apply:hover {
+  background-color: orangered;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar input {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar input {
+    text-align: center;
+    float: none;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="filter.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1><span style="color: olive;">Meal</span>&nbsp;<span style="color: orangered;">Finder</h1>
+      <div class="flex">
+        <form autocomplete="off" class="flex" id="submit">
+          <div class="autocomplete">
+            <input type="text" id="search" placeholder="Search for meal" />
+          </div>
+          <button class="search-btn" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+        <button class="random-btn" id="random">
+          <i class="fa fa-random"></i>
+        </button>
+      </div>
+    </div>
+    <div class="sidebar">
+      <h2>Category</h2>
+      <div id="category"></div>
+      <h2>Area</h2>
+      <div id="area"></div>
+      <button class="apply" id="apply">Apply</button>
+    </div>
+    <div class="content">
+      <div id="result-heading"></div>
+      <div id="meals" class="meals"></div>
+      <div id="single-meal"></div>
+    </div>
+
+    <script src="filter.js"></script>
+    <script src="auto.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
